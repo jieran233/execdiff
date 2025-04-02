@@ -5,7 +5,7 @@ DATA_DIR="$SCRIPT_DIR"
 
 record_executables() {
     local output_file="$1"
-    find /c/test -type f \( -iname "*.exe" -o -iname "*.bat" -o -iname "*.cmd" -o -iname "*.com" \) | sort > "$output_file"
+    find /c -type f \( -iname "*.exe" -o -iname "*.bat" -o -iname "*.cmd" -o -iname "*.com" \) | sort > "$output_file"
 }
 
 case "$1" in
